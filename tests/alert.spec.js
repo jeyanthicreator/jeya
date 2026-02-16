@@ -12,6 +12,6 @@ test("validate alert messages", async({page,context})=>{
     })
     //await page.locator('input[id="confirmbtn"]').click()
     await page.locator('input[id="alertbtn"]').click()
-    await page.pause()
+    await page.pause();
 
     })
