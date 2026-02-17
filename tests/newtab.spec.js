@@ -6,7 +6,7 @@ test("validate basic elements using playwright-newtab",async({page,context})=>{
         page.locator('[id="opentab"]').click()
     ]);
     await newTab.locator('a[href="about.html"]').first().click()
-    await newTab.pause()
+    await newTab.pause();
 })
 
 
