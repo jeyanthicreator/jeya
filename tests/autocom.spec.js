@@ -18,6 +18,8 @@ test("validate basic elements using playwright",async({page})=>{
         }
     }
  await page.pause()
+
+ await page.waitForTimeout(3000)
 })
 
 // using hastext concept
