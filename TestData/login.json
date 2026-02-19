@@ -1,0 +1,32 @@
+[
+  {
+    "id": "TC01",
+    "testName": "Positive Login Test",
+    "username": "student",
+    "password": "Password123",
+    "expected": {
+      "type": "success"
+    }
+  },
+
+  {
+    "id":"TC02",
+    "testname":"Negative username test",
+    "username":"incorrectUser",
+    "password":"Password123",
+    "expected": {
+      "type": "error",
+      "message":"Your username is invalid!"
+    }
+  },
+  {
+    "id": "TC03",
+    "testName": "Negative Password Test",
+    "username": "student",
+    "password": "incorrectPassword",
+    "expected": {
+      "type": "error",
+      "message": "Your password is invalid!"
+  }
+}
+]

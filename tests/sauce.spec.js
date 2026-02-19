@@ -4,6 +4,7 @@ test("validate items subtotal in saucesite",async({page})=>{
     await page.locator('[id="user-name"]').fill("standard_user")
     await page.locator('[id="password"]').fill("secret_sauce")
     await page.locator('[value="Login"]').click()
+    //await page.waitForLoadState('load')
     await expect(page).toHaveURL("https://www.saucedemo.com/inventory.html")
 
     await page.locator('#add-to-cart-sauce-labs-backpack').click()

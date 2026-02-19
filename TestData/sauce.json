@@ -1,0 +1,9 @@
+{
+    "username":"standard_user",
+    "password":"secret_sauce",
+    "products":["Backpack","Bike","Onesie","Fleece"],
+    "firstname":"Jeya",
+    "lastname":"chandran",
+    "postalcode":"7634380"
+    
+}

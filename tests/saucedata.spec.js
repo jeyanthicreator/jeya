@@ -22,7 +22,6 @@ test("validating subtotal in checkout page",async({page})=>{
   let total=cartPrice.map(ele=>Number(ele.split("$")[1].trim())).reduce((a,b)=>a+b,0)
   //console.log(Math.floor(total));
   console.log(total)*/
-   await page.pause();
-
+   await page.pause()
 
 })
