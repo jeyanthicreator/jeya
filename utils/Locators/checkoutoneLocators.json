@@ -1,0 +1,7 @@
+{
+    "firstnamebox":"#first-name",
+    "lastnamebox":"#last-name",
+    "postalcodebox":"#postal-code",
+    "continuebutton":"[value='Continue']"
+
+}

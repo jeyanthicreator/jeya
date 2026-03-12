@@ -1,5 +1,5 @@
 import {test,expect} from "@playwright/test"
-test("validate HideShow button elements using playwright",async({page})=>
+test("validate HideShow button elements using playwright",{tag:"@regression"},async({page})=>
 {
     await page.goto("https://rahulshettyacademy.com/AutomationPractice/")
     const showButton=page.locator('[id="show-textbox"]')

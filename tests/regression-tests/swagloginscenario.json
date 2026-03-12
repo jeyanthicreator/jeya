@@ -1,0 +1,31 @@
+[
+  {
+    "id": "TC01",
+    "testName": "Valid Login",
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "expected": {
+      "type": "success"
+    }
+  },
+  {
+    "id": "TC02",
+    "testName": "Invalid Username",
+    "username": "wrong_user",
+    "password": "secret_sauce",
+    "expected": {
+      "type": "failure",
+      "message": "Username and password do not match any user in this service"
+    }
+  },
+  {
+    "id": "TC03",
+    "testName": "Invalid Password",
+    "username": "standard_user",
+    "password": "wrong_password",
+    "expected": {
+      "type": "failure",
+      "message":"Username and password do not match any user in this service"
+    }
+  }
+]

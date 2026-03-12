@@ -1,5 +1,5 @@
 import{test,expect} from "@playwright/test"
-test("validate alert messages", async({page,context})=>{
+test("validate alert messages",{tag:"@smoke"},async({page,context})=>{
     await page.goto("https://rahulshettyacademy.com/AutomationPractice/")
     page.on('dialog',async(dialog)=>{
 

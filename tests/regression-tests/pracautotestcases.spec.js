@@ -1,8 +1,8 @@
 import{test,expect} from '@playwright/test'
-test("Testcase:1 : Positive Login Test",async({page})=>{
+test("Testcase:1 : Positive Login Test",{tag:"@regression"},async({page})=>{
     await page.goto('https://practicetestautomation.com/practice-test-login/')
     await page.locator('[id="username"]').fill("student")
-    await page.locator('[id="pa ssword"]').fill("Password123")
+    await page.locator('[id="password"]').fill("Password123")
     await page.locator('button[id="submit"]').click()
     await expect(page).toHaveURL("https://practicetestautomation.com/logged-in-successfully/")
     await expect(page).toHaveTitle("Logged In Successfully | Practice Test Automation")
@@ -13,7 +13,7 @@ test("Testcase:1 : Positive Login Test",async({page})=>{
 
 })
 
-test("Testcase:2 :Negative username test",async({page})=>{
+test("Testcase:2 :Negative username test",{tag:["@smoke","@regression"]},async({page})=>{
     await page.goto('https://practicetestautomation.com/practice-test-login/')
     await page.locator("[id='username']").fill(" incorrectUser")
     await page.locator("[id='password']").fill("Password123")
@@ -23,7 +23,7 @@ test("Testcase:2 :Negative username test",async({page})=>{
     await expect(page).toHaveURL("https://practicetestautomation.com/practice-test-login/")
 })
 
-test("Test case 3: Negative password test",async({page})=>
+test("Test case 3: Negative password test",{tag:["@smoke","@regression"]},async({page})=>
 {
  await page.goto('https://practicetestautomation.com/practice-test-login/')
 await page.locator('[id="username"]').fill("student")

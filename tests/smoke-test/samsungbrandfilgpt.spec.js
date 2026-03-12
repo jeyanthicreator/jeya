@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('List Samsung mobiles descriptions', async ({ page }) => {
+test('List Samsung mobiles descriptions',{tag:"@smoke"},async ({ page }) => {
 
   // 1) Go to Amazon
   await page.goto('https://www.amazon.in', { waitUntil: 'domcontentloaded' });

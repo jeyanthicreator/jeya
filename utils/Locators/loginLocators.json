@@ -1,0 +1,5 @@
+{
+    "usernameBox":"[id='user-name']",
+    "passwordBox":"[id='password']",
+    "loginButton":"[value='Login']"
+}

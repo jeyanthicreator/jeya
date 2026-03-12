@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test'
 
-test("simple task on buttons",async({page})=>{
+test("simple task on buttons",{tag:["@smoke","@regression"]},async({page})=>{
 
     await page.goto("https://rahulshettyacademy.com/AutomationPractice/")
     await page.locator('input[value="radio1"]').check()

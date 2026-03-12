@@ -1,5 +1,5 @@
 import {test,expect} from '@playwright/test'
-test("validate basic elements using playwright",async({page})=>{
+test("validate basic elements using playwright",{tag:"@smoke"},async({page})=>{
 
     await page.goto("https://rahulshettyacademy.com/AutomationPractice/")
 

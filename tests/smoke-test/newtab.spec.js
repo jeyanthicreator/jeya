@@ -1,5 +1,5 @@
 import{test,expect} from "@playwright/test"
-test("validate basic elements using playwright-newtab",async({page,context})=>{
+test("validate basic elements using playwright-newtab",{tag:"@smoke"},async({page,context})=>{
     await page.goto("https://rahulshettyacademy.com/AutomationPractice/")
     const [newTab]=await Promise.all([
         context.waitForEvent('page'),

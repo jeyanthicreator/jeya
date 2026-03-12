@@ -1,5 +1,5 @@
 import{test,expect} from "@playwright/test"
-test("Table for displaying the course details",async({page})=>{
+test("Table for displaying the course details",{tag:"@regression"},async({page})=>{
 
     await page.goto("https://rahulshettyacademy.com/AutomationPractice/")
     //test('Verify JMETER course price using filter', async ({ page }) => {
