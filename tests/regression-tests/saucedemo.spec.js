@@ -1,7 +1,7 @@
 import {test,expect} from "@playwright/test"
 
 import LoginPage from "../../POM/loginPage"
-import data from "../../testdatas/sauce.json"
+import data from "../../sauce.json"
 import InventoryPage from "../../POM/inventoryPage"
 import CartPage from "../../POM/cartpage"
 import CheckoutStepOnePage from "../../POM/checkoutStepOne"
@@ -35,14 +35,14 @@ test("validating subtotal in checkout page",{tag:["@smoke","@regression"]},async
   
 
   
- // await page.locator('[id="checkout"]').click()
- // await page.locator('#first-name').fill("jeya")
- // await page.locator('#last-name').fill("chandran")
-  //await page.locator('#postal-code').fill('600075')
- // await page.locator('[value="Continue"]').click()
- // const cartPrice=await page.locator('[class="cart_item"] [class="inventory_item_price"]').allTextContents()
-  //let total=cartPrice.map(ele=>Number(ele.split("$")[1].trim())).reduce((a,b)=>a+b,0)
-  //console.log(Math.floor(total));
-  //console.log(total)
+  /*await page.locator('[id="checkout"]').click()
+  await page.locator('#first-name').fill("jeya")
+  await page.locator('#last-name').fill("chandran")
+  await page.locator('#postal-code').fill('600075')
+  await page.locator('[value="Continue"]').click()
+  const cartPrice=await page.locator('[class="cart_item"] [class="inventory_item_price"]').allTextContents()
+  let total=cartPrice.map(ele=>Number(ele.split("$")[1].trim())).reduce((a,b)=>a+b,0)
+  console.log(Math.floor(total));
+  console.log(total)*/
   
 

@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "default":"npx playwright test",
-    "smoke-test":"npx playwright test --project=chromium --grep=@smoke --workers=1",
-    "cross-test":"npx playwright test --workers=2",
-    "sanity-test":"npx playwright test --project=chromium --grep=@sanity --workers=1",
-    "regression-tests":"npx playwright test --grep=@regression --workers=1 --headed"
+    "default": "npx playwright test",
+    "smoke-test": "npx playwright test --project=chromium --grep=@smoke --workers=1",
+    "cross-test": "npx playwright test --workers=2",
+    "sanity-test": "npx playwright test --project=chromium --grep=@sanity --workers=1",
+    "regression-tests": "npx playwright test --grep=@regression --workers=1 --headed"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,8 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.58.1",
-    "@types/node": "^25.2.0"
+    "@types/node": "^25.2.0",
+    "allure-commandline": "^2.38.1",
+    "allure-playwright": "^3.6.0"
   }
 }

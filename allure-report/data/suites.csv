@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","554","validate very first login_page","chromium","2026-03-31","passed","2026-03-31","","regression-tests\glosauce.spec.js","",""
+"","704","validate saucedemo cart1 page","chromium","2026-03-31","passed","2026-03-31","","regression-tests\glosauce.spec.js","",""
+"","2","validate just login page","chromium","2026-03-31","skipped","2026-03-31","","regression-tests\glosauce.spec.js","",""
+"","509","validate adding products to the cart","chromium","2026-03-31","passed","2026-03-31","","regression-tests\glosauce.spec.js","",""
+"","464","validate sauce cart page","chromium","2026-03-31","passed","2026-03-31","","regression-tests\glosauce.spec.js","",""
