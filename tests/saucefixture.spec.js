@@ -7,5 +7,5 @@ test("task2",async({signedInUser})=>{
    await signedInUser.locator('.shopping_cart_link').click();
    await expect(signedInUser).toHaveURL("https://www.saucedemo.com/cart.html");
 
-    await signedInUser.pause()
+ await signedInUser.pause()
 })

@@ -1,7 +1,7 @@
 import {test,expect} from "@playwright/test"
 
 import LoginPage from "../../POM/loginPage"
-import data from "../../sauce.json"
+import data from "../sauce.json"
 import InventoryPage from "../../POM/inventoryPage"
 import CartPage from "../../POM/cartpage"
 import CheckoutStepOnePage from "../../POM/checkoutStepOne"
